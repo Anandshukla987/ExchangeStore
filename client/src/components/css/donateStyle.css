@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+#donateBox {
+    display: flex;
+    margin: auto;
+    height: 760px;
+    width: 100%;
+}
+
+#advPic {
+    background-color: #87CEFA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 8vw;
+    width: 25vw;
+    height: 500px;
+    opacity: 0.7;
+    border-radius: 8px;
+}
+
+#advPic:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+#advPic img {
+    display: none;
+    overflow: hidden;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#advPic input {
+    display: none;
+}
+
+#advInfo form {
+    display: flex;
+    flex-direction: column;
+}
+
+.advInfo {
+    border: 1px solid #708090;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.advInfo:focus {
+    border: none;
+    outline: 3px solid #FFC0CB;
+}
+
+#title {
+    padding: 0 30px;
+    height: 50px;
+    width: 20vw;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+#title:focus {
+    width: 21vw;
+}
+
+#category,
+#city {
+    font-weight: bold;
+    padding: 0 30px;
+    height: 30px;
+    width: 13vw;
+    color: #646567;
+}
+#category{
+    margin-top:-10px;
+}
+#description {
+    padding: 10px 30px;
+    resize: none;
+    height: 300px;
+    width: 50vw;
+}
+
+#post {
+    display: block;
+    margin: 0;
+    margin-top: 20px;
+}
+
+#errpost {
+    color: rgb(203, 7, 7);
+    text-align: left;
+}
+
+.headline {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: -25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: large;
+    color: black;
+}
+
+#cardimg {
+    border-radius: 5px 5px 0 0;
+    height: 300px;
+    width: 100%;
+    text-align: center;
+    background-color: #708090;
+}
+
+#cardimg img {
+    overflow: hidden;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.hide {
+    display: none;
+}
+
+.error{
+    margin-top: 30px;
+    color:crimson;
+    font-size: larger;
+    height: 25vh;
+    font-weight:500;
+}
+
+.success {
+    justify-content: center;
+    margin: 35vh 35vw;
+}
+#checkpin{
+    width: 100px;
+    margin-top: 12px;
+    margin-left: 0px;
+    border: 1px solid #198754;
+}
+
+@media screen and (max-width:750px) {
+    #checkpin{
+        margin: 15px auto;
+    }
+    .success {
+        margin: 30vh 11vw;
+    }
+
+    #donateBox {
+        flex-direction: column;
+        height: auto;
+        margin-bottom: 100px;
+    }
+
+    #advPic {
+        margin: auto;
+        border-radius: 1;
+        width: 80vw;
+        height: 230px;
+        margin-bottom: 25px;
+    }
+
+    #title,
+    #category,
+    #description,
+    #city,
+    #title:focus {
+        margin: 8px auto;
+        width: 50vw;
+        text-align: center;
+    }
+
+    #description {
+        height: 30vh;
+        width: 90vw;
+        margin-top: 30px;
+    }
+
+    #post {
+        margin: auto;
+        margin-top: 50px;
+    }
+
+    #errpost {
+        text-align: center;
+    }
+
+    .headline {
+        margin:20px auto;
+        width:84vw;
+    }
+
+    #cardimg {
+        height: 200px;
+    }
+}

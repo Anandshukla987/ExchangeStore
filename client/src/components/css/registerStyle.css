@@ -1,0 +1,193 @@
+#regBox{
+    height: 610px;
+    width:350px;
+    background: linear-gradient(rgba(212,66,227,1) 1%, rgba(11,30,172,1) 100%);
+}
+#box:before{
+    /* box-shadow: -8px 0 30px 10px rgb(134, 126, 141); */
+    position: absolute;
+    width: 0px;
+    content: " ";
+    height: 510px;
+    margin-top: 15px;
+}
+.reg-input{
+    border-bottom: 2px solid #20fbdf;
+    width:75%;
+}
+#register{
+    display: flex;
+    justify-content: center;
+}
+#regImage{
+    background-image: url('../images/register1.svg');
+    height: 530px;
+    width:300px;
+    border-radius: 10px 0px 0px 10px;
+}
+#regForm{
+    margin:auto;
+    margin:0 40px;
+    margin-top:50px;
+}
+h4,p{
+    margin-bottom: 0px;
+    text-align:center;
+}
+
+#regForm{
+    margin-top: 10px;
+}
+#regCon{
+    text-align: center;
+    color:white;
+}
+#regCon a{
+    color: white;
+}
+
+input{
+    background:transparent;
+}
+.reg-input{
+    color: white;
+}
+.reg-input[type=password]::-webkit-input-placeholder,
+.reg-input[type=text]::-webkit-input-placeholder,
+.reg-input[type=email]::-webkit-input-placeholder,
+.reg-input[type=number]::-webkit-input-placeholder {
+    color:	rgb(162, 176, 183);
+}
+.reg-input[type=number]:focus,
+.reg-input[type=password]:focus,
+.reg-input[type=text]:focus,
+.reg-input[type=email]:focus{
+  background: transparent;
+  color:white;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    /* -webkit-text-fill-color: #fff !important; */
+}
+.reg-input:-webkit-autofill,
+.reg-input:-webkit-autofill:hover,
+.reg-input:-webkit-autofill:focus,
+.reg-input:-webkit-autofill:active {
+    -webkit-text-fill-color: #fff !important;
+}
+#errMsg{
+    font-weight: bold;
+    color:rgb(203, 7, 7);
+    text-shadow: 0 0 3px #ffffff;
+}
+.hidePhone{
+    display: none;
+    visibility: hidden;
+}
+#Avatar{
+    display: inline-block;
+    cursor: pointer;
+    /* box-shadow: 0 0 10px 50px white inset; */
+    border: none;
+    border-radius: 100%;
+}
+#avatar{
+    margin:auto;
+    margin-top:20px ;
+    height:120px;
+    width:120px;
+}
+#avatar img{
+    height:100%;
+    width:100%;
+    object-fit:contain;
+}
+#profileImage{
+    display: none;
+}
+
+@media screen and (max-width:750px){
+    #avatar{
+        margin-top:10px;
+        margin-bottom: 25px;
+    }
+    /* #box{
+        margin:0;
+        position: absolute;
+        display: flex;
+        height:100vh;
+        width: 100%;
+        box-shadow: none;
+    } 
+    */
+    #regBox{
+        width:300px;
+    }
+    #regImage{
+        background-image:none;
+        height:50px;
+        width: 100%;
+    }   
+    #register{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items:center;
+        margin: auto;
+        margin-top:10px;
+    }
+    #form{
+        margin:auto;
+        margin-top: 40px;
+    }
+    #form p{
+        width:50vw;
+        margin-left:5px;
+    }
+    form p{
+        margin-top:30px;
+    }
+    form{
+        margin-top:30px;
+    }
+    #regCon{
+        margin-top:10px;
+    }
+    #btn{
+        margin-top:35px;
+    }
+    #errMsg{
+        margin-top: 20px;
+    }
+    .regDesk{
+        /* display: none; */
+        margin:0px;
+    }
+    .hidePhone{
+        visibility: none;
+    }
+    .hidePhone{
+        display: block;
+        margin-top: 30px;
+        visibility: visible;
+    }
+    #Avatar{
+        margin-top: 15px;
+        /* box-shadow: 0 0 0px 0px white; */
+        height: 130px;
+        width: 130px;
+    }
+    #uploadImg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

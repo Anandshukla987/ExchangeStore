@@ -1,0 +1,15 @@
+#deleteAlert{
+    height:80px;
+    width: 300px;
+    visibility: hidden;
+}
+#successSVG{
+    display:none;
+}
+#successSymbol{
+    height:30px;
+    width: 30px;
+}
+#deleteAlert div{
+    margin-left: 30px;
+}

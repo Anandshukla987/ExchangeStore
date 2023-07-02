@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300&family=Nunito:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+#profile{
+    /* margin:auto; */
+    height: 445px;
+    margin:70px auto;
+    display: inline-block;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    box-shadow: 0 0 10px 1px rgb(228, 208, 246);
+    display: inline-block;
+    padding-top: 30px;
+    position: relative;
+    left: 50%; 
+    transform: translateX(-50%);
+}
+#profileCont{
+    display: flex;
+    text-align:left;
+    align-items: center;
+    margin:10px 30px;
+}
+#profilePic{
+    text-align:center;
+    margin:auto;
+    margin-top:50px;
+}
+#DP{
+    border-radius: 100%;
+}
+#Item{
+    width:70px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+#Itemvalue{
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+    color:limegreen;
+}
+#edit{
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+#profileIn{
+    margin: 12px 50px;
+    width: 230px;
+}
+#delete{
+    display: block;
+    width:150px;
+    margin: 0 auto;
+    margin-top:10px;
+}
+
+@media screen and (max-width:750px){
+    #profile{
+        height: 70vh;
+        width: 100%;
+        box-shadow: none;
+        margin:30px auto;
+    }
+    #Item{
+        width:70px;
+        font-weight: bold;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    #Itemvalue{
+        font-family: 'Kanit', sans-serif;
+    }
+    #profileCont{
+        display: flex;
+        flex-direction: column;
+        text-align:left;
+        align-items:flex-start;
+        margin:10px 30px;
+    }
+    #profileCont div{
+        text-align:center;
+        margin: auto;
+    }
+    #profile{
+        width: 300px;
+        padding-top: 15px;
+    }
+    #profileIn{
+        
+        margin: 12px auto;
+        width: 230px;
+    }
+}

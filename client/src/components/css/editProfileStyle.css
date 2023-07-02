@@ -1,0 +1,75 @@
+#verify{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 45px;
+}
+#verify input{
+    border: 2px solid coral;
+    border-radius: 10px;
+    height: 40px;
+    width: 200px;
+    padding:0 30px;
+    margin-bottom: 30px;
+}
+#verify input:focus, .editInfo:focus{
+    border:1px solid #6495ED;
+    outline: 3px solid #ADD8E6;
+}
+#verify p{
+    margin-top:50px;
+    font-size: medium;
+    width: 180px;
+}
+.hide{
+    display: none;
+}
+#editProfile{
+    margin:0 20px;
+    margin-top:-20px;
+    text-align: center;
+}
+#userinfo{
+    text-align:left;
+    margin-left: 43px;
+    margin-bottom: 5px;
+}
+#userinfo span{
+    padding:0 8px;
+}
+#userinfo span:nth-child(1){
+    color:black;
+    font-weight: bold;
+}
+#userinfo span:nth-child(2){
+    color:green;
+}
+
+#profilePhoto{
+    display: block;
+    margin:10px auto;
+    margin-bottom: 30px;
+    border-radius: 100%;
+}
+.editInfo{
+    border: 2px solid #D8BFD8;
+    border-radius: 10px;
+    padding:0 15px;
+    height: 35px;
+    width:200px
+}
+
+.edit{
+    margin-right:-20px;
+}
+ @media screen and (max-width:750px){
+    #editProfile{
+        margin:0 20px;
+        margin-top:20px;
+        text-align: center;
+    }
+    #verify{
+        margin:170px 0;
+    }
+ }
